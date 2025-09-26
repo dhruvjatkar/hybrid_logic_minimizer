@@ -1,0 +1,3 @@
+[submodule "cellov2"]
+	path = cellov2
+	url = https://github.com/CIDARLAB/Cello-v2.git
