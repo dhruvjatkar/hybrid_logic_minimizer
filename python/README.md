@@ -65,6 +65,12 @@ PYTHONPATH=python ./.venv/bin/python -m hybrid_logic.scripts.hlm_compile_verilog
     --emit-plot path/to/module_tree.png
 ```
 
+Interactively explore the same flow inside Jupyter:
+
+```bash
+PYTHONPATH=python jupyter notebook python/examples/verilog_to_nor.ipynb
+```
+
 The scripts rely solely on the `.mat` files that ship with this repository, so
 no MATLAB runtime is required.
 
