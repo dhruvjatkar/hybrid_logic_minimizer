@@ -79,20 +79,3 @@ PYTHONPATH=python python -m unittest discover -s python/tests -t .
 4. Visualise the tree (`hybrid_logic.viz.tree_plot`) or emit a structural
    NOR2 netlist (`hybrid_logic.verilog.netlist_writer`).
 
-## Documentation
-
-- Local HTML docs: build with
-  `sphinx-build -b html docs docs/_build/html` and open `docs/_build/html/index.html`.
-- Read the Docs: the repo includes `.readthedocs.yaml` — if connected, the docs
-  will be published automatically on push.
-
-For a Python‑specific overview and additional examples, see `python/README.md`.
-
-## Troubleshooting
-
-- Ensure `PYTHONPATH=python` is set when invoking modules from the repo root.
-- If RTD fails config validation, verify `.readthedocs.yaml` (only `htmlzip`,
-  `pdf`, or `epub` are valid under `formats:` — or omit the key).
-- Some doc builds mock heavy imports; install `docs/requirements.txt` locally
-  for a complete experience.
-
